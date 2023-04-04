@@ -1,0 +1,184 @@
+<div class="container-fluid">
+<h4 class="text-center" style="line-height: 1.5;">Modified Voluntary Retirement Scheme-2022 Of AZAM JAHI MILL WORKERS <br> (318) EX-EMPLOYEES 0F A J MILL COVERED UNDER HON'BLE SUPREME COURT OF INDIA ORDER DATED 26-10-2021 <br> @@@</h4>
+
+<div class="container" style="margin-top: 2rem;">
+    <div class="col-sm-8 m-auto">
+<form (ngSubmit)="submit()">
+    <div class="form-group row mb-4">
+      <label for="inputEmail3" class="col-sm-4 col-form-label">Name of the ex-employee:</label>
+      <div class="col-sm-8">
+        <input type="text" class="form-control">
+      </div>
+    </div>
+    <div class="form-group row mb-4">
+      <label for="inputPassword3" class="col-sm-4 col-form-label">Father / Husband Name:</label>
+      <div class="col-sm-8">
+        <input type="text" class="form-control" >
+      </div>
+    </div>
+
+    <div class="form-group row mb-4">
+        <label for="inputPassword3" class="col-sm-4 col-form-label">Residential Address:</label>
+        <div class="col-sm-8">
+            <textarea class="form-control" rows="2" ></textarea>
+        </div>
+      </div>
+      <div class="form-group row mb-4">
+        <label for="inputPassword3" class="col-sm-4 col-form-label">Email address if any:</label>
+        <div class="col-sm-8">
+          <input type="text" class="form-control">
+        </div>
+      </div>
+      <div class="form-group row mb-4">
+        <label for="inputPassword3" class="col-sm-4 col-form-label">Mobile Number:</label>
+        <div class="col-sm-8">
+          <input type="text" class="form-control">
+        </div>
+      </div>
+      <b>Followin Copies to be enclosed</b>
+      <div class="form-group row mb-4 mt-2 custom-file">
+        <label for="inputPassword3" class="col-sm-4 col-form-label">1.Adhar Card Number:</label>
+        <div class="col-sm-8">
+            <div class="row">
+                <div class="col-sm-3">
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" #firstyes  name="firstRadio" value="yes" (change)="check($event)" checked>
+                        <label class="form-check-label" for="inlineRadio1">Yes</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" #firstno value="no" name="firstRadio" (change)="check($event)">
+                        <label class="form-check-label" for="inlineRadio2">No</label>
+                      </div>
+                </div>
+                <div class="col-sm-4">
+          <input type="text" class="form-control" [disabled]="firstno.checked"> 
+        </div>
+        <div class="col-sm-5">
+            <input type="file" class="form-control" [disabled]="firstno.checked">
+        </div>
+        </div>
+        </div>
+      </div>
+
+      <div class="form-group row mb-4 mt-2 custom-file">
+        <label for="inputPassword3" class="col-sm-4 col-form-label">2.Relieving order of the ex-employees Department name, Designation, Token No.:</label>
+        <div class="col-sm-8">
+            <div class="row">
+                <div class="col-sm-3">
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="secondRadio" #secondyes value="yes" (change)="check($event)" checked>
+                        <label class="form-check-label" for="inlineRadio1">Yes</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="secondRadio" #secondno value="no" (change)="check($event)">
+                        <label class="form-check-label" for="inlineRadio2">No</label>
+                      </div>
+                </div>
+        <div class="col-sm-9">
+            <input type="file" class="form-control" [disabled]="secondno.checked">
+        </div>
+        </div>
+        </div>
+      </div>
+
+      
+      <div class="form-group row mb-4 mt-2 custom-file">
+        <label for="inputPassword3" class="col-sm-4 col-form-label">3.Last drawn pay slip of ex-employee:</label>
+        <div class="col-sm-8">
+            <div class="row">
+                <div class="col-sm-3">
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="thirdRadio" #thirdyes value="yes" (change)="check($event)" checked>
+                        <label class="form-check-label" for="inlineRadio1">Yes</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="thirdRadio" #thirdno value="no" (change)="check($event)">
+                        <label class="form-check-label" for="inlineRadio2">No</label>
+                      </div>
+                </div>
+        <div class="col-sm-9">
+            <input type="file" class="form-control" [disabled]="thirdno.checked">
+        </div>
+        </div>
+        </div>
+      </div>
+
+      
+      <div class="form-group row mb-4 mt-2 custom-file">
+        <label for="inputPassword3" class="col-sm-4 col-form-label">4.identity Card issued by A.J.Mills:</label>
+        <div class="col-sm-8">
+            <div class="row">
+                <div class="col-sm-3">
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="fourthRadio" value="yes" #fourthyes (change)="check($event)" checked>
+                        <label class="form-check-label" for="inlineRadio1">Yes</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="fourthRadio" value="no" #fourthno (change)="check($event)">
+                        <label class="form-check-label" for="inlineRadio2">No</label>
+                      </div>
+                </div>
+        <div class="col-sm-9">
+            <input type="file" class="form-control" [disabled]="fourthno.checked">
+        </div>
+        </div>
+        </div>
+      </div>
+
+      
+      <div class="form-group row mb-4 mt-2 custom-file">
+        <label for="inputPassword3" class="col-sm-4 col-form-label">5.Pension order issued by the A.J.Mills:</label>
+        <div class="col-sm-8">
+            <div class="row">
+                <div class="col-sm-3">
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="fifthRadio" value="yes" #fifthyes (change)="check($event)" checked>
+                        <label class="form-check-label" for="inlineRadio1">Yes</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="fifthRadio" value="no" #fifthno (change)="check($event)">
+                        <label class="form-check-label" for="inlineRadio2">No</label>
+                      </div>
+                </div>
+        <div class="col-sm-9">
+            <input type="file" class="form-control" [disabled]="fifthno.checked">
+        </div>
+        </div>
+        </div>
+      </div>
+
+      
+      <div class="form-group row mb-4 mt-2 custom-file">
+        <label for="inputPassword3" class="col-sm-4 col-form-label">6.ESI/PF No. etc., issued by A.J.Mills:</label>
+        <div class="col-sm-8">
+            <div class="row">
+                <div class="col-sm-3">
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="sixthRadio" value="yes" #sixthyes (change)="check($event)" checked>
+                        <label class="form-check-label" for="inlineRadio1">Yes</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="sixthRadio" value="no" #sixthno (change)="check($event)">
+                        <label class="form-check-label" for="inlineRadio2">No</label>
+                      </div>
+                </div>
+        <div class="col-sm-9">
+            <input type="file" class="form-control" [disabled]="sixthno.checked">
+        </div>
+        </div>
+        </div>
+      </div>
+
+
+    <div class="form-group row">
+      <div class="col-sm-10 text-center mt-2">
+        <button type="submit" class="btn btn-primary" routerLink="/dashboard">Submit</button>
+      </div>
+    </div>
+    <br>
+      <br>
+  </form>
+</div>
+</div>
+
+</div>

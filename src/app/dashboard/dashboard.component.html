@@ -1,0 +1,80 @@
+<nav class="navbar navbar-dark bg-primary justify-content-between p-2">
+<h4 class="text-light">Information</h4>
+   <div class="text-right">
+    <button class="btn btn-danger" routerLink="/login">Logout</button>
+   </div>
+  </nav>
+<!-- <div class="container table-responsive py-5" style="width: 100%;"> 
+  <div class="text-end mb-2">
+  <button class="btn btn-success" routerLink="/new">New</button>
+</div>
+<div class="table-responsive">
+    <table class="table table-bordered table-hover text-center">
+      <thead style="background-color:#B8E3FF;">
+        <tr>
+          <th scope="col">S.No</th>
+          <th scope="col">Name</th>
+          <th scope="col">Address</th>
+          <th scope="col">Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let c of rawData index as i">
+          <td>{{i+1}}</td>
+          <td>{{c.name}}</td>
+          <td>Karimnagar</td>
+          <td>
+            <button class="btn btn-primary" routerLink="/new">Edit</button> &nbsp;
+            <button class="btn btn-danger">Delete</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+    </div> -->
+
+    <section class="intro">
+      <div class="bg-image h-100" style="background-color: #f5f7fa;">
+        <div class="mask d-flex align-items-center h-100">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-12">
+                <div class="text-end m-2">
+                  <button class="btn btn-success" routerLink="/new">New</button>
+                </div>
+                <div class="card">
+                  <div class="card-body p-0">
+                    <div class="table-responsive table-scroll " data-mdb-perfect-scrollbar="true" >
+                      <table class="table table-striped mb-0 text-center">
+                        <thead style="background-color: #002d72;">
+                          <tr>
+                            <th scope="col">S.No</th>
+                            <th scope="col">Name</th>
+                            <th scope="col">Address</th>
+                            <th scope="col">Contact</th>
+                            <th scope="col">Action</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr *ngFor="let c of rawData index as i">
+                            <td>{{i+1}}</td>
+                            <td>{{c.name}}</td>
+                            <td>{{c.address}}</td>
+                            <td>{{c.mobile}}</td>
+                            <td>
+                              <button class="btn btn-primary" routerLink="/new">Edit</button> &nbsp;
+                              <button class="btn btn-info">Thumb</button>
+                            </td>
+                          </tr>  
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
